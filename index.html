@@ -24,18 +24,19 @@ awesome.min.css" />
 <body>
 
     <header class="jumbotron jumbotron-fluid">
-           <div class="container">
-      <div class="row">
-        <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
-        <div class="col-4 col-sm-3 col-md-2 align-self-center">
+        <div class="container">
+            <div class="row">
+                <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                </div>
+                <div class="col">
+                    <h1>NuCamp</h1>
+                    <h2>a better way to camp</h2>
+                </div>
+           <div class="col col-md-4 col-xl-2 mt-4"><a href="#reserveform"><button class="btn bg-info btn-lg text-white">reserve campsite</button>
+            </div>
         </div>
-        <div class="col">
-          <h1>NuCamp</h1>
-          <h2>a better way to camp</h2>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
     </header>
     <div class="container">
         <div class="row row-content align-items-center">
@@ -43,12 +44,14 @@ awesome.min.css" />
             <div class="col-sm-4 col-md-3">
                 <h2 class="text-sm-right">Discover & Review</h2>
             </div>
-            <            <div class="col">
+            <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
+                        alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                            own reviews!</p>
                     </div>
                 </div>
             </div>
@@ -60,27 +63,62 @@ awesome.min.css" />
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine
-                    React Lake is a favorite for fly fishers.</p>
-            </div>
-        </div>
-
-                   <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                     <div class="media-body align-self-center">
-                        <h3>Bootstrap Outfitters</h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+
+                        <h3>React Lake Campground</h3>
+                        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the
+                            pristine
+                            React Lake is a favorite for fly fishers.</p>
                     </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Bootstrap Outfitters" />
                 </div>
             </div>
-
         </div>
+
+        <div class="col">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                <div class="media-body align-self-center">
+                    <h3>Bootstrap Outfitters</h3>
+                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
+                        can't beat.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row row-content"></div>
+    <div class="col col-sm-6 mx-auto">
+        <div class="card">
+            <h3 class="card-header bg-info text-white">reserve a campsite</h3>
+            <div class="card-body">
+                <form id="reserveform">
+                    <div class="row"><label class="col-12 col-sm-6">number of campers</label>
+                        <div class="col"><select name="numcampers" id="numcampers">
+                                <option>Select...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6
+                            </select></div>
+                    </div>
+                    <div class="row" for="date"><label class="col-12 col-sm-6">date</label><input type="date" id="date" name="date" ></div>
+                    <div class="row"><button type="button" class="btn btn-primary btn-sm">Search</button></div>
+                </form>
+             
+            </div>
+        </div>
+
+
+
+
     </div>
 
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
@@ -118,14 +156,13 @@ awesome.min.css" />
                 </div>
 
             </div>
-            <footer class="site-footer">
+    </footer>
 
 
-
-                <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-                <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-                <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-                <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
